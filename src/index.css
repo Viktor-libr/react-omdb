@@ -5,9 +5,63 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(36, 33, 33);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav {
+  padding: 0 100px;
+}
+
+.footer {
+  background-color: rgb(78, 59, 59);
+  border-radius: 10px;
+  padding: 10px 50px;
+  margin: 20px 200px;
+}
+.footer-info {
+  font-size: 12px;
+  padding: 0 100px;
+  position: relative;
+}
+.footer-copy {
+  color: white;
+}
+.footer-href {
+  position: absolute;
+  right: 50px;
+  color: white;
+}
+.footer-href:hover {
+  color: black;
+}
+
+.content {
+  min-height: calc(100vh - 64px - 70px);
+  padding: 1.5rem 0;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 2.5rem;
+}
+
+
+.validate {
+  color: rgb(194, 113, 88);
+}
+
+.search-inp {
+  position: relative;
+}
+
+.search-btn {
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+}
+
+.radio-btn {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
