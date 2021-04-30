@@ -3,7 +3,7 @@ import { Movies } from '../component/Movies';
 import { Preloader } from '../component/Preloader';
 import { Search } from '../component/Search';
 
-const API_KEY = process.env.REACT_REPOSITORY_API_KEY;
+var API_KEY = process.env.REACT_APP_API_KEY
 
 class Main extends React.Component {
     state = {
@@ -12,7 +12,7 @@ class Main extends React.Component {
     }
 
     componentDidMount() {
-        // console.log(process.env)
+        console.log(process.env)
         fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=matrix`)
             .then(response => response.json())
             .then(data => this.setState({ movies: data.Search, loading: false }))
